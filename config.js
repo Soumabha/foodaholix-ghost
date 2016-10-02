@@ -24,6 +24,16 @@ config = {
         server: {
             host: '127.0.0.1',
             port: '8080'
+        }, 
+        storage: {
+            active: 's3',
+            's3': {
+                accessKeyId: 'AKIAITQH5HM4BQYSD5RA',
+                secretAccessKey: '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',
+                bucket: 'foodaholixassets',
+                region: 'ap-south-1',
+                assetHost: 'https://s3.ap-south-1.amazonaws.com/foodaholixassets'
+            }
         }
     },
 
@@ -69,6 +79,16 @@ config = {
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
+        }, 
+        storage: {
+            active: 's3',
+            's3': {
+                accessKeyId: 'AKIAITQH5HM4BQYSD5RA',
+                secretAccessKey: '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',
+                bucket: 'stage.foodaholixassets',
+                region: 'ap-south-1',
+                assetHost: 'https://s3.ap-south-1.amazonaws.com/stage.foodaholixassets',
+            }
         },
         // #### Paths
         // Specify where your content directory lives
